@@ -35,6 +35,7 @@ EduConnect est une application éducative mobile conçue pour offrir un apprenti
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
   <img src="screenshots/home_screen.png" alt="Écran d'accueil" width="200"/>
+    <img src="screenshots/home_screen_dark.png" alt="Écran d'accueil DARK" width="200"/>
   <img src="screenshots/courses_screen.png" alt="Écran des cours" width="200"/>
   <img src="screenshots/course_detail.png" alt="Détail d'un cours" width="200"/>
 </div>
