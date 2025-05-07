@@ -2,7 +2,7 @@
 
 EduConnect est une application éducative mobile conçue pour offrir un apprentissage personnalisé aux élèves. Cette plateforme permet aux utilisateurs d'accéder à des cours, de suivre leur progression et d'améliorer leurs compétences académiques.
 
-![Logo EduConnect](screenshots/splash_screen.png)
+![Logo EduConnect](screenshots/logo.png)
 
 ## Fonctionnalités
 
