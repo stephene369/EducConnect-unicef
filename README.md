@@ -18,9 +18,9 @@ EduConnect est une application éducative mobile conçue pour offrir un apprenti
 ### Écran de démarrage et authentification
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-  <img src="screenshots/splash_screen.png" alt="Écran de démarrage" width="400"/>
-  <img src="screenshots/welcome_screen.png" alt="Écran de bienvenue" width="400"/>
-  <img src="screenshots/login_screen.png" alt="Écran de connexion" width="400"/>
+  <img src="screenshots/splash_screen.png" alt="Écran de démarrage" width="300"/>
+  <img src="screenshots/welcome_screen.png" alt="Écran de bienvenue" width="300"/>
+  <img src="screenshots/login_screen.png" alt="Écran de connexion" width="300"/>
 </div>
 
 ### Processus d'inscription
