@@ -18,34 +18,34 @@ EduConnect est une application éducative mobile conçue pour offrir un apprenti
 ### Écran de démarrage et authentification
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center; align-content: center;">
-  <img src="screenshots/splash_screen.png" alt="Écran de démarrage" width="300"/>
-  <img src="screenshots/welcome_screen.png" alt="Écran de bienvenue" width="300"/>
-  <img src="screenshots/login_screen.png" alt="Écran de connexion" width="300"/>
+  <img src="screenshots/splash_screen.png" alt="Écran de démarrage" width="400"/>
+  <img src="screenshots/welcome_screen.png" alt="Écran de bienvenue" width="400"/>
+  <img src="screenshots/login_screen.png" alt="Écran de connexion" width="400"/>
 </div>
 
 ### Processus d'inscription
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center; align-content: center;">
-  <img src="screenshots/register_step1.png" alt="Inscription - Étape 1" width="300"/>
-  <img src="screenshots/register_step2.png" alt="Inscription - Étape 2" width="300"/>
-  <img src="screenshots/register_step3.png" alt="Inscription - Étape 3" width="300"/>
+  <img src="screenshots/register_step1.png" alt="Inscription - Étape 1" width="400"/>
+  <img src="screenshots/register_step2.png" alt="Inscription - Étape 2" width="400"/>
+  <img src="screenshots/register_step3.png" alt="Inscription - Étape 3" width="400"/>
 </div>
 
 ### Interface principale
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center; align-content: center;">
-  <img src="screenshots/home_screen.png" alt="Écran d'accueil" width="300"/>
-    <img src="screenshots/home_screen_dark.png" alt="Écran d'accueil DARK" width="300"/>
-  <img src="screenshots/courses_screen.png" alt="Écran des cours" width="300"/>
-  <img src="screenshots/course_detail.png" alt="Détail d'un cours" width="300"/>
+  <img src="screenshots/home_screen.png" alt="Écran d'accueil" width="400"/>
+    <img src="screenshots/home_screen_dark.png" alt="Écran d'accueil DARK" width="400"/>
+  <img src="screenshots/courses_screen.png" alt="Écran des cours" width="400"/>
+  <img src="screenshots/course_detail.png" alt="Détail d'un cours" width="400"/>
 </div>
 
 ### Statistiques et profil
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center; align-content: center;">
-  <img src="screenshots/stats_screen.png" alt="Écran des statistiques" width="300"/>
-  <img src="screenshots/profile_screen.png" alt="Écran de profil" width="300"/>
-  <img src="screenshots/settings.png" alt="Paramètres" width="300"/>
+  <img src="screenshots/stats_screen.png" alt="Écran des statistiques" width="400"/>
+  <img src="screenshots/profile_screen.png" alt="Écran de profil" width="400"/>
+  <img src="screenshots/settings.png" alt="Paramètres" width="400"/>
 </div>
 
 ## Technologies utilisées
