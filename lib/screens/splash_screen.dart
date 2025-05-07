@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'home_screen.dart';
+import 'welcome_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -10,32 +10,35 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
+  late AnimationController _animationController;
   late Animation<double> _animation;
 
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(
-      duration: const Duration(seconds: 2),
+    
+    _animationController = AnimationController(
       vsync: this,
+      duration: const Duration(seconds: 2),
     );
+    
     _animation = CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeIn,
+      parent: _animationController,
+      curve: Curves.easeInOut,
     );
-    _controller.forward();
-
+    
+    _animationController.forward();
+    
     Timer(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        MaterialPageRoute(builder: (_) => const WelcomeScreen()),
       );
     });
   }
 
   @override
   void dispose() {
-    _controller.dispose();
+    _animationController.dispose();
     super.dispose();
   }
 
@@ -43,11 +46,11 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color(0xFF4285F4), Color(0xFF34A853)],
+            colors: [Colors.blue.shade700, Colors.blue.shade500],
           ),
         ),
         child: Center(
@@ -56,51 +59,41 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
             children: [
               FadeTransition(
                 opacity: _animation,
-                child: const Icon(
-                  Icons.school,
-                  size: 100,
-                  color: Colors.white,
+                child: ScaleTransition(
+                  scale: _animation,
+                  child: const Icon(
+                    Icons.school,
+                    size: 120,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 24),
               FadeTransition(
                 opacity: _animation,
                 child: const Text(
                   'EduConnect',
                   style: TextStyle(
+                    color: Colors.white,
                     fontSize: 32,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
                   ),
                 ),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 8),
               FadeTransition(
                 opacity: _animation,
                 child: const Text(
-                  'Apprends même sans Internet',
+                  'Apprendre sans limites',
                   style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.white,
+                    color: Colors.white70,
+                    fontSize: 16,
                   ),
                 ),
               ),
-              const SizedBox(height: 50),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) => const HomeScreen()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: const Color(0xFF4285F4),
-                  padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                ),
-                child: const Text(
-                  'Commencer',
-                  style: TextStyle(fontSize: 18),
-                ),
+              const SizedBox(height: 48),
+              const CircularProgressIndicator(
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
               ),
             ],
           ),
